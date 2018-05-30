@@ -13,10 +13,9 @@ if __name__ == '__main__':
 
     if len(sys.argv) > 1 and os.path.exists(sys.argv[1]):
         scan_directory = sys.argv[1]
-        names = os.listdir(scan_directory)
+        names = os.walk(scan_directory)
         for name in names:
-            fullname = os.path.join(scan_directory, name)
-            print(fullname)
+            print(name)
     else:
         sys.exit('You forget enter path or file does not exist.'
                  'Please read help (--help)')
