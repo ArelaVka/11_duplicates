@@ -32,6 +32,6 @@ if __name__ == '__main__':
     else:
         sys.exit('You forget enter path or file does not exist.'
                  'Please read help (--help)')
-    info = list_dir(scan_directory)
-    for each_file, duplicate_file in find_duplicates(info):
+    directory_info = list_dir(scan_directory)
+    for each_file, duplicate_file in find_duplicates(directory_info):
         print('\nFile "{0}" is copy of "{1}"'.format(each_file, duplicate_file))
