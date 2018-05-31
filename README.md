@@ -11,11 +11,20 @@ python duplicates.py <directory>
 
 Example (Windows):
 ```cmd
-C:\>python C:\11_duplicates\duplicates.py C:\11_duplicates\testdir
+C:\>python C:\11_duplicates\duplicates.py C:\testdir
 
-File "C:\11_duplicates\testdir\README-copy - копия.md" is copy of "C:\11_duplicates\testdir\in\README-copy - копия.md"
+Duplicate files:
++ C:\testdir\123.docx
++ C:\testdir\123123\123.docx
++ C:\testdir\in\123.docx
 
-File "C:\11_duplicates\testdir\README-copy.md" is copy of "C:\11_duplicates\testdir\in\README-copy.md"
+Duplicate files:
++ C:\testdir\README-copy - копия.md
++ C:\testdir\in\README-copy - копия.md
+
+Duplicate files:
++ C:\testdir\README-copy.md
++ C:\testdir\in\README-copy.md
 ```
 
 # Project Goals
