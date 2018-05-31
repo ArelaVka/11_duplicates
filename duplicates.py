@@ -24,16 +24,9 @@ def find_duplicates(dir_full_info):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Find duplicates in '
-                                                 'directory recursively')
-    parser.add_argument('<directory>', type=str,
-                        help='path of scanning directory')
-    args = parser.parse_args()
-
     if len(sys.argv) > 1 and os.path.isdir(sys.argv[1]):
         scan_directory = sys.argv[1]
     else:
-        sys.exit('You forget enter path or file does not exist.'
-                 'Please read help (--help)')
+        sys.exit('You forget enter path or file does not exist')
     directory_info = list_dir(scan_directory)
     find_duplicates(directory_info)
